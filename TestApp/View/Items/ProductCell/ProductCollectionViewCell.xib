@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="TestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbT-5x-RWw">
+                        <rect key="frame" x="0.0" y="0.0" width="485" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_product_image" translatesAutoresizingMaskIntoConstraints="NO" id="vz5-Zh-z6X">
+                                <rect key="frame" x="16" y="24" width="132" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="FBv-IG-jNm"/>
+                                    <constraint firstAttribute="width" constant="132" id="gLZ-Be-oLF"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GbJ-Vx-kvl">
+                                <rect key="frame" x="180" y="32" width="281" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXr-5i-lgi">
+                                        <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wi-E7-fUC">
+                                        <rect key="frame" x="0.0" y="28.333333333333339" width="33" height="15.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApR-rA-mQl">
+                                <rect key="frame" x="374" y="124" width="87" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="E2p-A4-htY"/>
+                                    <constraint firstAttribute="height" constant="32" id="Shu-OH-F7t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="от 345р.">
+                                    <color key="titleColor" red="0.99215686274509807" green="0.22745098039215686" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="priceBtnT:" destination="gTV-IL-0wX" eventType="touchUpInside" id="tgW-FB-JlS"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmK-x6-10d">
+                                <rect key="frame" x="0.0" y="179" width="485" height="1"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xxk-Kd-rNS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GbJ-Vx-kvl" firstAttribute="leading" secondItem="vz5-Zh-z6X" secondAttribute="trailing" constant="32" id="BzH-OF-VFv"/>
+                            <constraint firstItem="ApR-rA-mQl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GbJ-Vx-kvl" secondAttribute="bottom" constant="16" id="JoS-VG-HWE"/>
+                            <constraint firstAttribute="bottom" secondItem="fmK-x6-10d" secondAttribute="bottom" id="OKy-fR-nAI"/>
+                            <constraint firstAttribute="trailing" secondItem="ApR-rA-mQl" secondAttribute="trailing" constant="24" id="RfK-Fi-3nf"/>
+                            <constraint firstItem="GbJ-Vx-kvl" firstAttribute="top" secondItem="PbT-5x-RWw" secondAttribute="top" constant="32" id="VlB-aG-GJ3"/>
+                            <constraint firstAttribute="trailing" secondItem="GbJ-Vx-kvl" secondAttribute="trailing" constant="24" id="bok-Cr-b1d"/>
+                            <constraint firstItem="vz5-Zh-z6X" firstAttribute="top" secondItem="PbT-5x-RWw" secondAttribute="top" constant="24" id="ecf-fC-mPx"/>
+                            <constraint firstAttribute="bottom" secondItem="vz5-Zh-z6X" secondAttribute="bottom" constant="24" id="oIw-1H-Mfh"/>
+                            <constraint firstAttribute="bottom" secondItem="ApR-rA-mQl" secondAttribute="bottom" constant="24" id="rv2-fR-Q6p"/>
+                            <constraint firstAttribute="trailing" secondItem="fmK-x6-10d" secondAttribute="trailing" id="tyK-2R-SY9"/>
+                            <constraint firstItem="fmK-x6-10d" firstAttribute="leading" secondItem="PbT-5x-RWw" secondAttribute="leading" id="uJh-IX-dUo"/>
+                            <constraint firstItem="vz5-Zh-z6X" firstAttribute="leading" secondItem="PbT-5x-RWw" secondAttribute="leading" constant="16" id="w4U-Dz-xiz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PbT-5x-RWw" secondAttribute="bottom" id="Mu2-di-Sgr"/>
+                <constraint firstItem="PbT-5x-RWw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UYO-0N-D9W"/>
+                <constraint firstAttribute="trailing" secondItem="PbT-5x-RWw" secondAttribute="trailing" id="nFE-2t-z07"/>
+                <constraint firstItem="PbT-5x-RWw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xQS-KD-R3S"/>
+            </constraints>
+            <size key="customSize" width="485" height="180"/>
+            <connections>
+                <outlet property="bgView" destination="PbT-5x-RWw" id="sfs-ht-Fk2"/>
+                <outlet property="priceBtn" destination="ApR-rA-mQl" id="hpl-KX-s62"/>
+                <outlet property="productDescription" destination="7Wi-E7-fUC" id="YTg-jk-tFB"/>
+                <outlet property="productImageView" destination="vz5-Zh-z6X" id="ADr-z6-Vcb"/>
+                <outlet property="productTitle" destination="MXr-5i-lgi" id="ffz-hc-hR2"/>
+            </connections>
+            <point key="canvasLocation" x="180.76923076923077" y="66.824644549763036"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="test_product_image" width="132" height="132"/>
+    </resources>
+</document>

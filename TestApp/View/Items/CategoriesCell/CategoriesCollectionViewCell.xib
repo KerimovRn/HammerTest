@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoriesCollectionViewCell" customModule="TestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="32"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="32"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGG-Tl-j4I">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9O-nX-s15">
+                                <rect key="frame" x="23" y="8" width="142" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="custom_pink_textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="t9O-nX-s15" firstAttribute="top" secondItem="XGG-Tl-j4I" secondAttribute="top" constant="8" id="G2c-z7-ZrM"/>
+                            <constraint firstItem="t9O-nX-s15" firstAttribute="leading" secondItem="XGG-Tl-j4I" secondAttribute="leading" constant="23" id="JFz-m4-D6X"/>
+                            <constraint firstAttribute="bottom" secondItem="t9O-nX-s15" secondAttribute="bottom" constant="8" id="cV8-Gu-01E"/>
+                            <constraint firstAttribute="trailing" secondItem="t9O-nX-s15" secondAttribute="trailing" constant="23" id="h5Y-Ff-ob5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="XGG-Tl-j4I" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vtg-qN-R6R"/>
+                <constraint firstItem="XGG-Tl-j4I" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XG9-5M-9tr"/>
+                <constraint firstAttribute="bottom" secondItem="XGG-Tl-j4I" secondAttribute="bottom" id="aTI-CB-fkX"/>
+                <constraint firstAttribute="trailing" secondItem="XGG-Tl-j4I" secondAttribute="trailing" id="dsN-gc-C3T"/>
+            </constraints>
+            <size key="customSize" width="188" height="32"/>
+            <connections>
+                <outlet property="borderView" destination="XGG-Tl-j4I" id="R8q-aQ-9DO"/>
+                <outlet property="titleLabel" destination="t9O-nX-s15" id="TtG-9Q-0RX"/>
+            </connections>
+            <point key="canvasLocation" x="193.84615384615384" y="14.218009478672984"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="custom_pink_textColor">
+            <color red="0.99215686274509807" green="0.22745098039215686" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
